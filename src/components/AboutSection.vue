@@ -31,7 +31,7 @@
         </p>
         <p class="output-line">
             <span class="cyan">></span> Mon parcours en Master 2 Informatique m’a permis d’explorer plusieurs
-            domaines : développement web (Angular, Vue.js), programmation orientée objet (Java, C#, C),
+            domaines : développement web (Angular, Vue.js), programmation logicielle (Java, C#, C),
             et intelligence artificielle (Keras, PyTorch, Scikit-learn).
         </p>
         <p class="output-line">

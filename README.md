@@ -1,6 +1,6 @@
 # Portfolio - Terminal Theme
 
-Un portfolio moderne avec un design inspiré du thème terminal de panr, créé avec Vue.js.
+Mon portfolio personnel développé avec Vue.js 3 et Vite. Découvrez mes compétences, projets et informations de contact dans une interface élégante et minimaliste.
 
 ## 🚀 Fonctionnalités
 
@@ -52,10 +52,7 @@ Les couleurs sont définies dans `src/style.css` avec les variables CSS :
 --blue-darker: #051320;
 ```
 
-## 📝 License
-
-MIT
 
 ---
 
-Fait avec ❤ | Inspiré par le thème terminal de panr
+Fait par Farrugia Kenzo
