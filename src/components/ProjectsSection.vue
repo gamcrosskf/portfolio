@@ -1,7 +1,7 @@
 <template>
   <section id="projects" class="section">
     <div class="command-line">
-      <span class="prompt">guest@portfolio:~$</span>
+      <span class="prompt">kenzo-farrugia@portfolio:~$</span>
       <span class="command">cat projects.json</span>
       <span class="cursor">_</span>
     </div>
@@ -94,32 +94,10 @@ export default {
     return {
       projects: [
         {
-          name: 'Portfolio Terminal',
-          description: 'Un portfolio interactif avec un design terminal moderne, inspiré du thème de panr.',
-          technologies: ['Vue.js', 'CSS3', 'Vite'],
-          github: 'https://github.com/votre-username/portfolio',
-          live: 'https://votre-portfolio.com'
-        },
-        {
-          name: 'Application E-commerce',
-          description: 'Une plateforme e-commerce complète avec gestion de panier, paiement et tableau de bord admin.',
-          technologies: ['Vue.js', 'Node.js', 'MongoDB', 'Stripe'],
-          github: 'https://github.com/votre-username/ecommerce',
-          live: null
-        },
-        {
-          name: 'Dashboard Analytics',
-          description: 'Dashboard de visualisation de données en temps réel avec graphiques interactifs.',
-          technologies: ['React', 'D3.js', 'TypeScript', 'Express'],
-          github: 'https://github.com/votre-username/dashboard',
-          live: 'https://dashboard-demo.com'
-        },
-        {
-          name: 'API REST',
-          description: 'API RESTful sécurisée avec authentification JWT et documentation Swagger.',
-          technologies: ['Node.js', 'Express', 'PostgreSQL', 'JWT'],
-          github: 'https://github.com/votre-username/api',
-          live: null
+          name: 'Portfolio - Farrugia Kenzo',
+          description: 'Mon portfolio personnel présentant mes compétences, projets et expériences.',
+          technologies: ['Vue.js'],
+          github: 'https://github.com/gamcrosskf/portfolio'
         }
       ]
     }

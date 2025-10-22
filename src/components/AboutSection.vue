@@ -1,7 +1,7 @@
 <template>
   <section id="about" class="section">
     <div class="command-line">
-      <span class="prompt">guest@portfolio:~$</span>
+      <span class="prompt">kenzo-farrugia@portfolio:~$</span>
       <span class="command">cat about.txt</span>
       <span class="cursor">_</span>
     </div>

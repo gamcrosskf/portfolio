@@ -1,7 +1,7 @@
 <template>
   <section id="contact" class="section">
     <div class="command-line">
-      <span class="prompt">guest@portfolio:~$</span>
+      <span class="prompt">kenzo-farrugia@portfolio:~$</span>
       <span class="command">./contact.sh</span>
       <span class="cursor">_</span>
     </div>

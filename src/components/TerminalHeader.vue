@@ -6,7 +6,7 @@
       <span class="btn maximize"></span>
     </div>
     <div class="terminal-title">
-      <span class="prompt">guest@portfolio:~$</span>
+      <span class="prompt">kenzo-farrugia@portfolio:~$</span>
     </div>
     <div class="terminal-menu">
       <a href="#about" class="menu-item">./about</a>

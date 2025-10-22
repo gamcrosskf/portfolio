@@ -1,7 +1,7 @@
 <template>
   <section id="skills" class="section">
     <div class="command-line">
-      <span class="prompt">guest@portfolio:~$</span>
+      <span class="prompt">kenzo-farrugia@portfolio:~$</span>
       <span class="command">ls -la skills/</span>
       <span class="cursor">_</span>
     </div>

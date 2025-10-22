@@ -2,8 +2,8 @@
   <div class="terminal-footer">
     <div class="footer-content">
       <span class="footer-text">
-        <span class="cyan">~</span> Made with 
-        <span class="heart">❤</span> 
+        <span class="cyan">~</span> Made by Farrugia Kenzo 
+        <span class="heart"></span> 
         <span class="cyan">|</span> 
         Inspired by panr's terminal theme
       </span>
