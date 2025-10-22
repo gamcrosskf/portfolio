@@ -101,7 +101,7 @@ export default {
   methods: {
     downloadCV() {
       // Logique de téléchargement du CV
-      alert('Fonctionnalité de téléchargement à implémenter avec votre CV')
+      alert('Fonction de téléchargement du CV à implémenter.');
     }
   }
 }
