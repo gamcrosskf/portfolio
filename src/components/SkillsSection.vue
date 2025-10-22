@@ -30,7 +30,7 @@
               :key="idx"
               class="skill-item"
             >
-              <span class="file-icon">{{ skill.type === 'dir' ? '📁' : '📄' }}</span>
+              <img v-if="skill.logo" :src="skill.logo" :alt="skill.name" class="skill-logo" />
               <span class="skill-name">{{ skill.name }}</span>
               <div class="skill-bar">
                 <div 
@@ -54,62 +54,76 @@ export default {
     return {
       skills: [
         {
-            name: 'Développement Web',
-            icon: '🌐',
-            items: [
-            { name: 'Angular', level: 85, type: 'file' },
-            { name: 'Vue.js', level: 80, type: 'file' },
-            { name: 'JavaScript / TypeScript', level: 90, type: 'file' },
-            { name: 'HTML5 / CSS3', level: 95, type: 'file' }
-            ]
+          name: 'Développement Web',
+          icon: '🌐',
+          items: [
+              { name: 'Vue.js', level: 90, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
+              { name: 'HTML5 / CSS3', level: 90, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+              { name: 'JavaScript / TypeScript', level: 90, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+            { name: 'Angular', level: 80, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
+          ]
         },
         {
-            name: 'Programmation',
-            icon: '💻',
-            items: [
-            { name: 'Java', level: 85, type: 'file' },
-            { name: 'C# (.NET)', level: 80, type: 'file' },
-            { name: 'Python', level: 85, type: 'file' },
-            { name: 'C', level: 75, type: 'file' }
-            ]
+          name: 'Programmation',
+          icon: '💻',
+          items: [
+              { name: 'Java', level: 95, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+              { name: 'C', level: 95, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
+              { name: 'Python', level: 85, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
+              { name: 'C++', level: 75, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
+              { name: 'C# (.NET)', level: 75, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
+          ]
         },
         {
-            name: 'Base de Données',
-            icon: '🗄️',
-            items: [
-            { name: 'MySQL', level: 85, type: 'dir' },
-            { name: 'PostgreSQL', level: 80, type: 'dir' }
-            ]
+          name: 'Base de Données',
+          icon: '🗄️',
+          items: [
+            { name: 'MySQL', level: 85, type: 'dir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+            { name: 'PostgreSQL', level: 85, type: 'dir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
+            { name: 'MongoDB', level: 80, type: 'dir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' }
+          ]
         },
         {
-            name: 'Intelligence Artificielle',
-            icon: '🧠',
-            items: [
-            { name: 'Keras / TensorFlow', level: 75, type: 'file' },
-            { name: 'PyTorch', level: 70, type: 'file' },
-            { name: 'Scikit-learn', level: 80, type: 'file' },
-            { name: 'Deep Learning', level: 75, type: 'dir' },
-            { name: 'Apprentissage Supervisé', level: 80, type: 'dir' }
-            ]
+          name: 'Intelligence Artificielle',
+          icon: '🧠',
+          items: [
+            { name: 'Scikit-learn', level: 80, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
+            { name: 'Keras', level: 75, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg' },
+            { name: 'PyTorch', level: 70, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg' },
+          ]
         },
         {
-            name: 'Outils & Méthodologies',
-            icon: '🛠️',
-            items: [
-            { name: 'Git / GitHub', level: 90, type: 'dir' },
-            { name: 'Méthodes Agiles (Scrum)', level: 80, type: 'dir' },
-            { name: 'Docker', level: 70, type: 'file' },
-            { name: 'CI/CD', level: 65, type: 'file' },
-            { name: 'REST APIs', level: 80, type: 'file' }
-            ]
+          name: 'Outils & Méthodologies',
+          icon: '🛠️',
+          items: [
+            { name: 'Git / GitHub', level: 90, type: 'dir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
+            { name: 'Méthodes Agiles (Scrum)', level: 80, type: 'dir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg' },
+            { name: 'REST APIs', level: 80, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
+            { name: 'Docker', level: 70, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
+            { name: 'CI/CD', level: 70, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg' },
+          ]
         }
-        ]
+      ]
     }
   }
 }
 </script>
 
 <style scoped>
+.skill-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+  filter: brightness(0.9);
+  transition: transform 0.2s ease;
+}
+
+.skill-logo:hover {
+  transform: scale(1.1);
+}
+
 .section {
   margin-bottom: 3rem;
   scroll-margin-top: 2rem;
