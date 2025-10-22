@@ -25,22 +25,23 @@
         </div>
         
         <div class="about-text">
-          <p class="output-line">
-            <span class="cyan">></span> Bonjour ! Je suis un développeur passionné par la création
-            d'applications web modernes et performantes.
-          </p>
-          <p class="output-line">
-            <span class="cyan">></span> J'aime transformer des idées complexes en solutions élégantes
-            et intuitives.
-          </p>
-          <p class="output-line">
-            <span class="cyan">></span> Mon objectif est de créer des expériences utilisateur
-            exceptionnelles tout en écrivant du code propre et maintenable.
-          </p>
-          <p class="output-line">
-            <span class="cyan">></span> Toujours curieux d'apprendre de nouvelles technologies
-            et de relever de nouveaux défis.
-          </p>
+        <p class="output-line">
+            <span class="cyan">></span> Bonjour ! Je suis un développeur passionné par la conception
+            d’applications alliant performance, fiabilité et innovation.
+        </p>
+        <p class="output-line">
+            <span class="cyan">></span> Mon parcours en Master 2 Informatique m’a permis d’explorer plusieurs
+            domaines : développement web (Angular, Vue.js), programmation orientée objet (Java, C#, C),
+            et intelligence artificielle (Keras, PyTorch, Scikit-learn).
+        </p>
+        <p class="output-line">
+            <span class="cyan">></span> J’aime concevoir des solutions complètes, du front-end dynamique
+            jusqu’à la logique backend et la gestion des bases de données (MySQL).
+        </p>
+        <p class="output-line">
+            <span class="cyan">></span> Organisé et curieux, je travaille avec Git et les méthodes agiles
+            pour développer des projets structurés, collaboratifs et évolutifs.
+        </p>
         </div>
       </div>
     </div>

@@ -35,6 +35,23 @@
             <div class="arrow">→</div>
           </a>
         </div>
+
+        <div class="linkedin-cta">
+        <p class="cta-text">
+          <span class="cyan">></span> Mon profil LinkedIn pour en savoir plus
+        </p>
+        <a 
+          href="https://www.linkedin.com/in/kenzo-farrugia-a883b5271" 
+          target="_blank"
+          rel="noopener noreferrer"
+          class="linkedin-btn"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          Voir mon LinkedIn
+        </a>
+      </div>
         
         <div class="download-cv">
           <p class="cv-text">
@@ -273,6 +290,48 @@ export default {
   box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
 }
 
+.linkedin-cta {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  border: 1px solid rgba(0, 255, 255, 0.2);
+  text-align: center;
+}
+
+.cta-text {
+  color: var(--gray-light);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.cta-text .cyan {
+  color: var(--cyan);
+  margin-right: 0.5rem;
+}
+
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 2rem;
+  background-color: #0077b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 2px solid #0077b5;
+}
+
+.linkedin-btn:hover {
+  background-color: transparent;
+  border-color: var(--cyan);
+  color: var(--cyan);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
+}
+
 @media (max-width: 768px) {
   .section-content {
     padding: 1.5rem;
@@ -283,6 +342,10 @@ export default {
   }
   
   .download-cv {
+    padding: 1.5rem;
+  }
+
+  .linkedin-cta {
     padding: 1.5rem;
   }
 }

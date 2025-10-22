@@ -54,39 +54,56 @@ export default {
     return {
       skills: [
         {
-          name: 'Frontend',
-          icon: '🎨',
-          items: [
-            { name: 'Vue.js', level: 90, type: 'file' },
-            { name: 'React', level: 85, type: 'file' },
-            { name: 'JavaScript/TypeScript', level: 90, type: 'file' },
-            { name: 'HTML5/CSS3', level: 95, type: 'file' },
-            { name: 'Tailwind CSS', level: 85, type: 'file' }
-          ]
+            name: 'Développement Web',
+            icon: '🌐',
+            items: [
+            { name: 'Angular', level: 85, type: 'file' },
+            { name: 'Vue.js', level: 80, type: 'file' },
+            { name: 'JavaScript / TypeScript', level: 90, type: 'file' },
+            { name: 'HTML5 / CSS3', level: 95, type: 'file' }
+            ]
         },
         {
-          name: 'Backend',
-          icon: '⚙️',
-          items: [
-            { name: 'Node.js', level: 85, type: 'file' },
-            { name: 'Python', level: 80, type: 'file' },
-            { name: 'Express', level: 85, type: 'file' },
-            { name: 'MongoDB', level: 75, type: 'dir' },
+            name: 'Programmation',
+            icon: '💻',
+            items: [
+            { name: 'Java', level: 85, type: 'file' },
+            { name: 'C# (.NET)', level: 80, type: 'file' },
+            { name: 'Python', level: 85, type: 'file' },
+            { name: 'C', level: 75, type: 'file' }
+            ]
+        },
+        {
+            name: 'Base de Données',
+            icon: '🗄️',
+            items: [
+            { name: 'MySQL', level: 85, type: 'dir' },
             { name: 'PostgreSQL', level: 80, type: 'dir' }
-          ]
+            ]
         },
         {
-          name: 'Outils & Autres',
-          icon: '🛠️',
-          items: [
-            { name: 'Git/GitHub', level: 90, type: 'dir' },
-            { name: 'Docker', level: 75, type: 'file' },
-            { name: 'CI/CD', level: 70, type: 'file' },
-            { name: 'REST APIs', level: 85, type: 'file' },
-            { name: 'Agile/Scrum', level: 80, type: 'dir' }
-          ]
+            name: 'Intelligence Artificielle',
+            icon: '🧠',
+            items: [
+            { name: 'Keras / TensorFlow', level: 75, type: 'file' },
+            { name: 'PyTorch', level: 70, type: 'file' },
+            { name: 'Scikit-learn', level: 80, type: 'file' },
+            { name: 'Deep Learning', level: 75, type: 'dir' },
+            { name: 'Apprentissage Supervisé', level: 80, type: 'dir' }
+            ]
+        },
+        {
+            name: 'Outils & Méthodologies',
+            icon: '🛠️',
+            items: [
+            { name: 'Git / GitHub', level: 90, type: 'dir' },
+            { name: 'Méthodes Agiles (Scrum)', level: 80, type: 'dir' },
+            { name: 'Docker', level: 70, type: 'file' },
+            { name: 'CI/CD', level: 65, type: 'file' },
+            { name: 'REST APIs', level: 80, type: 'file' }
+            ]
         }
-      ]
+        ]
     }
   }
 }
