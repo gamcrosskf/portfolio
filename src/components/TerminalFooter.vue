@@ -2,7 +2,7 @@
   <div class="terminal-footer">
     <div class="footer-content">
       <span class="footer-text">
-        <span class="cyan">~</span> Made by Farrugia Kenzo 
+        <span class="cyan">~</span> Made by {{ config.personal.name }}
       </span>
       <span class="footer-year">{{ currentYear }}</span>
     </div>

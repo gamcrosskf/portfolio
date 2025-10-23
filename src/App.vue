@@ -1,6 +1,6 @@
 <template>
   <div class="terminal-container">
-    <TerminalHeader />
+    <TerminalHeader :config="config" />
     <div class="terminal-content">
       <AboutSection :config="config" />
       <SkillsSection :config="config" />

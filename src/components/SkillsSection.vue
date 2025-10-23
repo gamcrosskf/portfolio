@@ -1,7 +1,7 @@
 <template>
   <section id="skills" class="section">
     <div class="command-line">
-      <span class="prompt">kenzo-farrugia@portfolio:~$</span>
+      <span class="prompt">{{ config.personal.bash }}@portfolio:~$</span>
       <span class="command">ls -la skills/</span>
       <span class="cursor">_</span>
     </div>
@@ -32,13 +32,6 @@
             >
               <img v-if="skill.logo" :src="skill.logo" :alt="skill.name" class="skill-logo" />
               <span class="skill-name">{{ skill.name }}</span>
-              <div class="skill-bar">
-                <div 
-                  class="skill-progress" 
-                  :style="{ width: skill.level + '%' }"
-                ></div>
-              </div>
-              <span class="skill-percent">{{ skill.level }}%</span>
             </li>
           </ul>
         </div>
@@ -65,20 +58,6 @@ export default {
 </script>
 
 <style scoped>
-.skill-logo {
-  width: 20px;
-  height: 20px;
-  object-fit: contain;
-  margin-right: 0.4rem;
-  vertical-align: middle;
-  filter: brightness(0.9);
-  transition: transform 0.2s ease;
-}
-
-.skill-logo:hover {
-  transform: scale(1.1);
-}
-
 .section {
   margin-bottom: 3rem;
   scroll-margin-top: 2rem;
@@ -172,66 +151,35 @@ export default {
 }
 
 .skill-item {
-  display: grid;
-  grid-template-columns: 20px 1fr auto 50px;
+  display: flex;
   align-items: center;
   gap: 0.8rem;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
 }
 
-.file-icon {
-  font-size: 0.85rem;
+.skill-item:hover {
+  background-color: rgba(0, 255, 255, 0.05);
+  transform: translateX(5px);
+}
+
+.skill-logo {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition: transform 0.2s ease;
+}
+
+.skill-item:hover .skill-logo {
+  transform: scale(1.15);
 }
 
 .skill-name {
   color: var(--gray-light);
-}
-
-.skill-bar {
-  height: 8px;
-  background-color: rgba(0, 255, 255, 0.1);
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-}
-
-.skill-progress {
-  height: 100%;
-  background: linear-gradient(90deg, var(--cyan-dark), var(--cyan));
-  border-radius: 4px;
-  transition: width 1s ease-out;
-  position: relative;
-}
-
-.skill-progress::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.3),
-    transparent
-  );
-  animation: shimmer 2s infinite;
-}
-
-@keyframes shimmer {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.skill-percent {
-  color: var(--cyan);
-  font-size: 0.85rem;
-  text-align: right;
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
@@ -243,19 +191,9 @@ export default {
     grid-template-columns: 1fr;
   }
   
-  .skill-item {
-    grid-template-columns: 20px 1fr;
-    gap: 0.5rem;
-  }
-  
-  .skill-bar {
-    grid-column: 1 / -1;
-  }
-  
-  .skill-percent {
-    grid-column: 1 / -1;
-    text-align: left;
-    padding-left: 20px;
+  .skill-logo {
+    width: 24px;
+    height: 24px;
   }
 }
 </style>

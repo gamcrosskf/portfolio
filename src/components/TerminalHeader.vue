@@ -6,7 +6,7 @@
       <span class="btn maximize"></span>
     </div>
     <div class="terminal-title">
-      <span class="prompt">kenzo-farrugia@portfolio:~$</span>
+      <span class="prompt">{{ config.personal.bash }}@portfolio:~$</span>
     </div>
     <div class="terminal-menu">
       <a href="#about" class="menu-item">./about</a>
@@ -19,8 +19,15 @@
 
 <script>
 export default {
-  name: 'TerminalHeader'
+  name: 'TerminalHeader',
+  props: {
+    config: {
+      type: Object,
+      required: true
+    }
+  }
 }
+
 </script>
 
 <style scoped>
