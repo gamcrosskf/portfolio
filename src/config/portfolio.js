@@ -98,8 +98,8 @@ export const portfolioConfig = {
     {
       name: "Email",
       icon: "https://www.svgrepo.com/show/484564/email-part-2.svg",
-      value: "kenzo.farrugia@hotmail.com",
-      link: "mailto:kenzo.farrugia@hotmail.com"
+      value: "kenzofarrugia@hotmail.com",
+      link: "mailto:kenzofarrugia@hotmail.com"
     },
     {
       name: "GitHub",
