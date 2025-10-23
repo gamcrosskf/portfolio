@@ -15,7 +15,7 @@
       
       <div class="contact-content">
         <p class="contact-intro">
-          <span class="cyan">></span> Intéressé par une collaboration ? N'hésitez pas à me contacter !
+          <span class="cyan">></span> Vous pouvez me contacter via les méthodes suivantes :
         </p>
         
         <div class="contact-methods">
@@ -27,7 +27,7 @@
             rel="noopener noreferrer"
             class="contact-card"
           >
-            <div class="contact-icon">{{ method.icon }}</div>
+            <img v-if="method.icon" :src="method.icon" :alt="method.name" class="contact-icon" />
             <div class="contact-info">
               <h3 class="contact-name">{{ method.name }}</h3>
               <p class="contact-value">{{ method.value }}</p>
@@ -161,6 +161,7 @@ export default {
 .contact-intro .cyan {
   position: absolute;
   left: 0;
+  margin-left: 20px;
   color: var(--cyan);
 }
 
@@ -323,6 +324,14 @@ export default {
   box-shadow: 0 5px 15px rgba(0, 255, 255, 0.2);
 }
 
+.contact-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: brightness(0.9);
+  transition: transform 0.2s ease;
+}
+
 @media (max-width: 768px) {
   .section-content {
     padding: 1.5rem;
@@ -338,6 +347,11 @@ export default {
 
   .linkedin-cta {
     padding: 1.5rem;
+  }
+
+  .contact-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 </style>

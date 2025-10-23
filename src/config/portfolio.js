@@ -62,7 +62,6 @@ export const portfolioConfig = {
       items: [
         { name: "Git / GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
         { name: "Scrum", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
-        { name: "REST APIs", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" },
         { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
         { name: "CI/CD", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" }
       ]
@@ -98,19 +97,13 @@ export const portfolioConfig = {
   contact: [
     {
       name: "Email",
-      icon: "",
+      icon: "https://www.svgrepo.com/show/484564/email-part-2.svg",
       value: "kenzo.farrugia@hotmail.com",
       link: "mailto:kenzo.farrugia@hotmail.com"
     },
     {
-      name: "LinkedIn",
-      icon: "",
-      value: "linkedin.com/in/kenzo-farrugia",
-      link: "https://www.linkedin.com/in/kenzo-farrugia-a883b5271"
-    },
-    {
       name: "GitHub",
-      icon: "",
+      icon: "https://www.svgrepo.com/show/450156/github.svg",
       value: "github.com/gamcrosskf",
       link: "https://github.com/gamcrosskf"
     }
