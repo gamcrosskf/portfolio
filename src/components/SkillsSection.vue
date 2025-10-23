@@ -50,60 +50,15 @@
 <script>
 export default {
   name: 'SkillsSection',
-  data() {
-    return {
-      skills: [
-        {
-          name: 'Développement Web',
-          icon: '🌐',
-          items: [
-              { name: 'Vue.js', level: 90, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg' },
-              { name: 'HTML5 / CSS3', level: 90, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
-              { name: 'JavaScript / TypeScript', level: 90, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
-            { name: 'Angular', level: 80, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg' },
-          ]
-        },
-        {
-          name: 'Programmation',
-          icon: '💻',
-          items: [
-              { name: 'Java', level: 95, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
-              { name: 'C', level: 95, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
-              { name: 'Python', level: 85, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
-              { name: 'C++', level: 75, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg' },
-              { name: 'C# (.NET)', level: 75, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg' },
-          ]
-        },
-        {
-          name: 'Base de Données',
-          icon: '🗄️',
-          items: [
-            { name: 'MySQL', level: 85, type: 'dir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
-            { name: 'PostgreSQL', level: 85, type: 'dir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
-            { name: 'MongoDB', level: 80, type: 'dir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' }
-          ]
-        },
-        {
-          name: 'Intelligence Artificielle',
-          icon: '🧠',
-          items: [
-            { name: 'Scikit-learn', level: 80, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg' },
-            { name: 'Keras', level: 75, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/keras/keras-original.svg' },
-            { name: 'PyTorch', level: 70, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg' },
-          ]
-        },
-        {
-          name: 'Outils & Méthodologies',
-          icon: '🛠️',
-          items: [
-            { name: 'Git / GitHub', level: 90, type: 'dir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg' },
-            { name: 'Méthodes Agiles (Scrum)', level: 80, type: 'dir', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg' },
-            { name: 'REST APIs', level: 80, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
-            { name: 'Docker', level: 70, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg' },
-            { name: 'CI/CD', level: 70, type: 'file', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg' },
-          ]
-        }
-      ]
+  props: {
+    config: {
+      type: Object,
+      required: true
+    }
+  },
+  computed: {
+    skills() {
+      return this.config.skills
     }
   }
 }

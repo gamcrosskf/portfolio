@@ -74,34 +74,25 @@
 <script>
 export default {
   name: 'ContactSection',
-  data() {
-    return {
-      contactMethods: [
-        {
-          name: 'Email',
-          icon: '📧',
-          value: 'kenzo.farrugia@hotmail.com',
-          link: 'mailto:kenzo.farrugia@hotmail.com'
-        },
-        {
-          name: 'LinkedIn',
-          icon: '💼',
-          value: 'linkedin.com/in/kenzo-farrugia',
-          link: 'https://www.linkedin.com/in/kenzo-farrugia-a883b5271'
-        },
-        {
-          name: 'GitHub',
-          icon: '💻',
-          value: 'github.com/gamcrosskf',
-          link: 'https://github.com/gamcrosskf'
-        }
-      ]
+  props: {
+    config: {
+      type: Object,
+      required: true
+    }
+  },
+  computed: {
+    contactMethods() {
+      return this.config.contact
     }
   },
   methods: {
     downloadCV() {
-      // Logique de téléchargement du CV
-      alert('Fonction de téléchargement du CV à implémenter.');
+      const link = this.config.cv.downloadLink
+      if (link) {
+        window.open(link, '_blank')
+      } else {
+        alert('Fonction de téléchargement du CV à implémenter.')
+      }
     }
   }
 }

@@ -73,22 +73,18 @@
 <script>
 export default {
   name: 'ProjectsSection',
-  data() {
-    return {
-      projects: [
-        {
-          name: 'Portfolio - Farrugia Kenzo',
-          description: 'Mon portfolio personnel présentant mes compétences, projets et expériences.',
-          technologies: ['Vue.js'],
-          github: 'https://github.com/gamcrosskf/portfolio'
-        },
-        {
-        name: 'Chess Game avec IA',
-        description: 'Jeu d\'échecs Python avec interface Tkinter et 3 moteurs IA (MinMax, Alpha-Beta, Multi-threadé).',
-        technologies: ['Python', 'Tkinter'],
-        github: 'https://github.com/gamcrosskf/chess'
-        }
-      ]
+  props: {
+    config: {
+      type: Object,
+      required: true
+    }
+  },
+  computed: {
+    projects() {
+      return this.config.projects
+    },
+    linkedinUrl() {
+      return this.config.social.linkedin
     }
   }
 }

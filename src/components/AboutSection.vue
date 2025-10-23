@@ -50,7 +50,13 @@
 
 <script>
 export default {
-  name: 'AboutSection'
+  name: 'AboutSection',
+  props: {
+    config: {
+      type: Object,
+      required: true
+    }
+  }
 }
 </script>
 

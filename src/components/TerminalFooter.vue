@@ -12,6 +12,12 @@
 <script>
 export default {
   name: 'TerminalFooter',
+  props: {
+    config: {
+      type: Object,
+      required: true
+    }
+  },
   data() {
     return {
       currentYear: new Date().getFullYear()

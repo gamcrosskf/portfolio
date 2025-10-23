@@ -2,16 +2,17 @@
   <div class="terminal-container">
     <TerminalHeader />
     <div class="terminal-content">
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ContactSection />
+      <AboutSection :config="config" />
+      <SkillsSection :config="config" />
+      <ProjectsSection :config="config" />
+      <ContactSection :config="config" />
     </div>
-    <TerminalFooter />
+    <TerminalFooter :config="config" />
   </div>
 </template>
 
 <script>
+import { portfolioConfig } from './config/portfolio.js'
 import TerminalHeader from './components/TerminalHeader.vue'
 import TerminalFooter from './components/TerminalFooter.vue'
 import AboutSection from './components/AboutSection.vue'
@@ -28,6 +29,11 @@ export default {
     SkillsSection,
     ProjectsSection,
     ContactSection
+  },
+  data() {
+    return {
+      config: portfolioConfig
+    }
   }
 }
 </script>
